@@ -83,16 +83,16 @@ shinyServer(function(input, output) {
   })
   
   output$text <- renderText({
-      paste("the built-in [R] airquality data set has Ozone data with Solar, Wind and Temperatere From May 1, 1973 to Sep 30, 1973.",
-            "",
+      paste("The built-in [R] airquality data set has Ozone data with Solar, Wind and Temperatere From May 1, 1973 to Sep 30, 1973.",
             "This Shiny app will load that data set and plot the Ozone data per Wind or Temperature, and provide the trend line of the corrected data by the selection.",
             "",
             "Selecting the variable from left drop box will pick the x-axis to draw Ozone value per the selection.",
-            "",
             "- selecting Wind from the left drop box will give plot of Ozone ~ Wind",
             "- seleting Temperate from the left drop box will plot of Ozone ~ Temp",
+            "Checking the box for trend will draw trend line on top of above plot.",
             "",
-            "Checking the box for trend will draw trend line on top of above plot", sep="\n")
+            "source code is uploaded at gitHub : ",
+            "https://github.com/seungyoon/dataproduct", sep="\n")
   })
   
 })
